@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c0b0a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zeyad · UGC Creator">
+<meta property="og:description" content="Split-screen reaction videos. 4.6M views in 60 days, 45,963 Instagram followers.">
+<meta property="og:image" content="https://zeyadmohamedd1.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://zeyadmohamedd1.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0b0a'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-style='italic' font-size='40' text-anchor='middle' fill='%23c9ab76'%3EZ%3C/text%3E%3C/svg%3E">
+<title>Zeyad UGC Portfolio</title>
+<meta name="description" content="Zeyad, UGC creator from Egypt. Split-screen reaction videos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=DM+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<style>
+/* Layout: portrait hero, one grid of numbers, three video cards, campaigns, a proof carousel, contact. Single dark look by choice. */
+:root{
+  --ink:#0c0b0a;
+  --surface:#15130f;
+  --line:#27231d;
+  --ivory:#e8e0d2;
+  --muted:#9c9386;
+  --gold:#c9ab76;
+  --gold-soft:rgba(201,171,118,.10);
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  --mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --gutter:clamp(16px,4.5vw,56px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--ivory);font-family:var(--body);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:clip}
+.page{max-width:1180px;margin-inline:auto;padding-inline:var(--gutter);padding-block:0 40px}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:500;text-wrap:balance;margin:0;letter-spacing:-.01em}
+p{margin:0}
+em{font-style:italic;color:var(--gold)}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.num{font-family:var(--display);font-weight:500;line-height:1;font-variant-numeric:tabular-nums lining-nums}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--gold);transition:background .25s,color .25s,border-color .25s;font-family:var(--body);cursor:pointer}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--ivory);border-color:var(--ivory)}
+.btn-ghost{background:transparent;color:var(--ivory);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn svg{width:15px;height:15px;flex:none}
+
+/* nav */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display);font-style:italic;font-size:26px;text-decoration:none}
+.brand span{color:var(--gold)}
+.nav .btn{padding:10px 18px;font-size:14px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,72px);align-items:center;padding-block:clamp(40px,7vw,84px)}
+.hero-copy{display:flex;flex-direction:column;gap:26px;min-width:0}
+.status{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--gold-soft)}
+.status .label{color:var(--ivory)}
+.hero h1{font-size:clamp(2.6rem,6.2vw,5.2rem);line-height:1.03}
+.lede{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--muted);max-width:32em}
+.lede strong{color:var(--ivory);font-weight:500}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.portrait{position:relative;margin:0;min-width:0}
+.portrait-frame{position:relative;border-radius:220px 220px 14px 14px;overflow:hidden;aspect-ratio:4/5;max-width:100%;background:var(--surface)}
+.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.portrait-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,11,10,0) 55%,rgba(12,11,10,.78) 100%)}
+.portrait::before{content:"";position:absolute;inset:-14px -14px 20px 20px;border:1px solid var(--gold);border-radius:230px 230px 18px 18px;opacity:.45;pointer-events:none}
+.plate{position:absolute;left:18px;right:18px;bottom:18px;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.plate .handle{font-family:var(--mono);font-size:13px}
+.plate .count{text-align:right;display:flex;flex-direction:column;gap:4px}
+.plate .count b{font-size:32px}
+
+/* sections */
+section{padding-block:clamp(56px,8vw,104px) 0}
+.head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 24px;margin-bottom:28px}
+.head h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05}
+
+/* numbers */
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.tile{padding:28px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px;min-width:0}
+.tile b{font-size:clamp(2rem,3.6vw,3rem)}
+.tile span{font-size:14px;color:var(--muted)}
+.tile.hi{background:radial-gradient(120% 120% at 0% 0%,var(--gold-soft),transparent 60%)}
+.tile.hi b{color:var(--gold)}
+
+/* videos */
+.videos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.video{display:flex;flex-direction:column;gap:22px;padding:26px;border:1px solid var(--line);border-radius:20px;background:var(--surface);min-width:0}
+.video-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.video .views{display:flex;flex-direction:column;gap:6px}
+.video .views b{font-size:clamp(3rem,6vw,4.4rem)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding-top:16px;border-top:1px solid var(--line)}
+.stats div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.stats b{font-family:var(--mono);font-weight:500;font-size:16px;font-variant-numeric:tabular-nums}
+.stats span{font-size:12px;color:var(--muted)}
+.video .btn{justify-content:center;margin-top:auto}
+
+/* campaigns */
+.campaigns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.camp{display:flex;flex-direction:column;gap:18px;padding:26px;border:1px solid var(--line);border-radius:20px;min-width:0}
+.camp h3{font-size:clamp(1.6rem,2.4vw,2rem)}
+.camp-figs{display:flex;flex-wrap:wrap;gap:22px 40px}
+.camp-figs div{display:flex;flex-direction:column;gap:6px}
+.camp-figs b{font-size:clamp(2.2rem,4vw,3rem)}
+.camp-figs span{font-size:14px;color:var(--muted)}
+.camp-figs small{font-size:.5em;color:var(--muted)}
+
+/* proof carousel */
+.car-ctrl{display:flex;align-items:center;gap:10px}
+.arrow{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ivory);display:grid;place-items:center;cursor:pointer;transition:border-color .2s,color .2s}
+.arrow:hover{border-color:var(--gold);color:var(--gold)}
+.arrow svg{width:16px;height:16px}
+.car{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.shot{flex:0 0 200px;scroll-snap-align:start;display:flex;flex-direction:column;gap:12px;padding:0;border:0;background:none;color:inherit;text-align:left;cursor:zoom-in;font:inherit}
+.shot.wide{flex-basis:340px}
+.frame{height:250px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surface);transition:border-color .25s}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:top;opacity:.9;transition:opacity .25s,transform .5s}
+.shot.wide .frame{display:grid;place-items:center;padding:14px}
+.shot.wide .frame img{height:auto;max-height:100%;object-fit:contain;border-radius:6px}
+.shot:hover .frame,.shot:focus-visible .frame{border-color:var(--gold)}
+.shot:hover .frame img{opacity:1}
+.cap{display:flex;flex-direction:column;gap:2px;font-size:14px;color:var(--muted)}
+.cap b{color:var(--ivory);font-weight:500}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,7,6,.94);display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:8px;padding:calc(56px + env(safe-area-inset-top,0px)) 12px calc(24px + env(safe-area-inset-bottom,0px))}
+.lb figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:14px;min-width:0}
+.lb img{max-width:min(100%,900px);max-height:calc(100vh - 150px);width:auto;height:auto;object-fit:contain;border-radius:12px}
+.lb figcaption{font-size:14px;color:var(--muted);text-align:center}
+.lb figcaption b{color:var(--ivory);font-weight:500}
+.lb-close{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:12px}
+
+/* contact */
+.contact{margin-top:clamp(56px,8vw,104px);padding:clamp(30px,6vw,64px);border-radius:28px;border:1px solid var(--line);background:radial-gradient(90% 120% at 100% 0%,var(--gold-soft),transparent 60%),var(--surface);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:center}
+.contact .intro{display:flex;flex-direction:column;gap:20px;min-width:0}
+.contact h2{font-size:clamp(2.2rem,4.6vw,3.8rem);line-height:1.04}
+.contact .intro p{color:var(--muted);max-width:28em}
+.channels{display:flex;flex-direction:column;gap:12px;min-width:0}
+.channel{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:var(--ink);text-decoration:none;transition:border-color .2s;min-width:0}
+a.channel:hover{border-color:var(--gold)}
+.channel div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.channel .val{font-size:16px;font-weight:500;overflow-wrap:anywhere;user-select:all}
+.channel .go{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);white-space:nowrap;background:none;border:0;padding:6px 0;cursor:pointer}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-block:26px 0;margin-top:44px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+
+/* load */
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.08s}.d2{animation-delay:.18s}.d3{animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rise{animation:none}html{scroll-behavior:auto}}
+
+@media (max-width:980px){
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .videos{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .videos .video:last-child{grid-column:1/-1}
+  .contact{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:820px){
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .portrait{max-width:420px;width:100%;justify-self:center}
+  .campaigns{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .videos{grid-template-columns:minmax(0,1fr)}
+  .tile{padding:22px 14px}
+  .portrait::before{inset:-10px -10px 16px 16px}
+  .shot{flex-basis:160px}
+  .shot.wide{flex-basis:280px}
+  .frame{height:210px}
+  .lb{grid-template-columns:minmax(0,1fr)}
+  .lb .lb-nav{display:none}
+}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#top">Zeyad<span>.</span></a>
+    <a class="btn btn-gold" href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-copy">
+      <span class="status rise"><i></i><span class="label">UGC Creator · Egypt</span></span>
+      <h1 class="rise d1">Split-screen reaction videos that <em>pull millions of views.</em></h1>
+      <p class="lede rise d2">I'm <strong>Zeyad</strong>. I make split-screen reaction UGC in Egyptian Arabic and I post consistently: <strong>38 videos in the last 30 days</strong> and <strong>4.6M views in the last 60</strong>.</p>
+      <div class="cta-row rise d3">
+        <a class="btn btn-gold" href="https://wa.me/201015761189?text=Hi%20Zeyad%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20UGC%20collab." target="_blank" rel="noopener">Work with me</a>
+        <a class="btn btn-ghost" href="#videos">Watch my videos</a>
+      </div>
+    </div>
+    <figure class="portrait rise d2">
+      <div class="portrait-frame">
+        <img src="img/zeyad.jpg" alt="Zeyad in a navy three-piece suit" width="880" height="1100">
+      </div>
+      <figcaption class="plate">
+        <span class="handle">@zeyadmohamedd.1</span>
+        <span class="count"><b class="num">45,963</b><span class="label">Followers</span></span>
+      </figcaption>
+    </figure>
+  </header>
+
+  <section id="numbers" aria-labelledby="numbers-h" style="padding-top:0">
+    <div class="head">
+      <h2 id="numbers-h">The numbers</h2>
+      <span class="label">Instagram Insights · Jul 30 – Sep 27, 2026</span>
+    </div>
+    <div class="tiles">
+      <div class="tile hi"><b class="num">4.6M</b><span>Views in the last 60 days</span></div>
+      <div class="tile hi"><b class="num">45,963</b><span>Instagram followers</span></div>
+      <div class="tile"><b class="num">2.0M</b><span>Views in the last 30 days</span></div>
+      <div class="tile"><b class="num">+8,216</b><span>New followers in 60 days</span></div>
+      <div class="tile"><b class="num">2.24M</b><span>Unique viewers in 60 days</span></div>
+      <div class="tile"><b class="num">98.8%</b><span>Of views from non-followers</span></div>
+      <div class="tile"><b class="num">240K+</b><span>Interactions in 60 days</span></div>
+      <div class="tile"><b class="num">38</b><span>Videos posted in 30 days</span></div>
+    </div>
+  </section>
+
+  <section id="videos" aria-labelledby="videos-h">
+    <div class="head">
+      <h2 id="videos-h">Top videos</h2>
+      <span class="label">Split-screen · Reaction</span>
+    </div>
+    <div class="videos">
+      <article class="video">
+        <div class="video-top"><span class="label">Video 01</span><span class="label">Split-screen reaction</span></div>
+        <div class="views"><b class="num">525K</b><span class="label">Views</span></div>
+        <div class="stats">
+          <div><b>13.9K</b><span>Likes</span></div>
+          <div><b>3K</b><span>Comments</span></div>
+          <div><b>11.3K</b><span>Shares</span></div>
+        </div>
+        <a class="btn btn-ghost" href="https://www.instagram.com/reel/DcKAeV0sznc/" target="_blank" rel="noopener">Watch video
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M4 10L10 4M5 4h5v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </article>
+      <article class="video">
+        <div class="video-top"><span class="label">Video 02</span><span class="label">Split-screen reaction</span></div>
+        <div class="views"><b class="num">300K</b><span class="label">Views</span></div>
+        <div class="stats">
+          <div><b>2.7K</b><span>Likes</span></div>
+          <div><b>1.5K</b><span>Comments</span></div>
+          <div><b>3.8K</b><span>Shares</span></div>
+        </div>
+        <a class="btn btn-ghost" href="https://www.instagram.com/reel/DdgsB0NM6o0/" target="_blank" rel="noopener">Watch video
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M4 10L10 4M5 4h5v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </article>
+      <article class="video">
+        <div class="video-top"><span class="label">Video 03</span><span class="label">Split-screen reaction</span></div>
+        <div class="views"><b class="num">215K</b><span class="label">Views</span></div>
+        <div class="stats">
+          <div><b>3.2K</b><span>Likes</span></div>
+          <div><b>1.2K</b><span>Comments</span></div>
+          <div><b>5.6K</b><span>Shares</span></div>
+        </div>
+        <a class="btn btn-ghost" href="https://www.instagram.com/reel/DayW0ShMYWa/" target="_blank" rel="noopener">Watch video
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M4 10L10 4M5 4h5v5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </article>
+    </div>
+  </section>
+
+  <section id="campaigns" aria-labelledby="campaigns-h">
+    <div class="head">
+      <h2 id="campaigns-h">Campaigns</h2>
+    </div>
+    <div class="campaigns">
+      <article class="camp">
+        <h3>Content Rewards</h3>
+        <div class="camp-figs">
+          <div><b class="num">3.0M</b><span>Campaign views</span></div>
+          <div><b class="num">101<small> / 123</small></b><span>Videos approved</span></div>
+        </div>
+      </article>
+      <article class="camp">
+        <h3>Ulio</h3>
+        <div class="camp-figs">
+          <div><b class="num">1.17M</b><span>Campaign views</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="proof" aria-labelledby="proof-h">
+    <div class="head">
+      <h2 id="proof-h">Proof</h2>
+      <div class="car-ctrl">
+        <span class="label">Tap to enlarge</span>
+        <button class="arrow" type="button" id="car-prev" aria-label="Previous"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button class="arrow" type="button" id="car-next" aria-label="Next"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>
+    <div class="car" id="car" tabindex="0" aria-label="Dashboard screenshots">
+      <button class="shot" type="button" data-i="0" aria-label="Enlarge: Account reach">
+        <span class="frame"><img src="img/p-60d.jpg" alt="Instagram Insights, 60 days: 4,612,424 views"></span>
+        <span class="cap"><b>Account reach</b>4.6M views in 60 days</span>
+      </button>
+      <button class="shot" type="button" data-i="1" aria-label="Enlarge: Last 30 days">
+        <span class="frame"><img src="img/p-30d.jpg" alt="Instagram Insights, 30 days: 1,965,830 views"></span>
+        <span class="cap"><b>Last 30 days</b>2.0M views, 1.1M viewers</span>
+      </button>
+      <button class="shot" type="button" data-i="2" aria-label="Enlarge: Followers">
+        <span class="frame"><img src="img/p-followers.jpg" alt="Instagram Insights, audience: 45,963 followers"></span>
+        <span class="cap"><b>Followers</b>45,963, up 10.5% in 30 days</span>
+      </button>
+      <button class="shot" type="button" data-i="3" aria-label="Enlarge: Consistency">
+        <span class="frame"><img src="img/p-dashboard.jpg" alt="Instagram professional dashboard: 2.0M views, 38 pieces of content shared"></span>
+        <span class="cap"><b>Consistency</b>38 videos in 30 days</span>
+      </button>
+      <button class="shot wide" type="button" data-i="4" aria-label="Enlarge: Content Rewards">
+        <span class="frame"><img src="img/p-cr.jpg" alt="Content Rewards analytics: 3.0M views, 123 submissions, 101 approved"></span>
+        <span class="cap"><b>Content Rewards</b>3.0M views, 101 of 123 approved</span>
+      </button>
+      <button class="shot wide" type="button" data-i="5" aria-label="Enlarge: Ulio campaign">
+        <span class="frame"><img src="img/p-ulio.jpg" alt="Ulio campaign dashboard: 1,173,923 views"></span>
+        <span class="cap"><b>Ulio campaign</b>1,173,923 views</span>
+      </button>
+      <button class="shot" type="button" data-i="6" aria-label="Enlarge: Client feedback">
+        <span class="frame"><img src="img/p-chat.jpg" alt="Chat showing reel views after three days and the reply: good work"></span>
+        <span class="cap"><b>Client feedback</b>Three days of posting</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="intro">
+      <h2 id="contact-h">Let's make your <em>next video.</em></h2>
+      <p>Send me your product and what you need. WhatsApp is the fastest way to reach me.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://wa.me/201015761189?text=Hi%20Zeyad%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20UGC%20collab." target="_blank" rel="noopener">Message on WhatsApp</a>
+      </div>
+    </div>
+    <div class="channels">
+      <a class="channel" href="https://wa.me/201015761189" target="_blank" rel="noopener">
+        <div><span class="label">WhatsApp</span><span class="val">+20 101 576 1189</span></div>
+        <span class="go">Open ↗</span>
+      </a>
+      <div class="channel">
+        <div><span class="label">Email</span><span class="val" id="email">zzyad1065@gmail.com</span></div>
+        <button class="go" type="button" id="copy-email">Copy</button>
+      </div>
+      <a class="channel" href="https://www.instagram.com/zeyadmohamedd.1/" target="_blank" rel="noopener">
+        <div><span class="label">Instagram</span><span class="val">@zeyadmohamedd.1</span></div>
+        <span class="go">Visit ↗</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <span>Zeyad · UGC Creator · Egypt</span>
+    <span>Numbers from Instagram Insights and campaign dashboards, Sep 2026.</span>
+  </footer>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Proof screenshot">
+  <button class="arrow lb-close" type="button" id="lb-close" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  <button class="arrow lb-nav" type="button" id="lb-prev" aria-label="Previous"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <figure><img id="lb-img" src="img/p-60d.jpg" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="arrow lb-nav" type="button" id="lb-next" aria-label="Next"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('copy-email'), email=document.getElementById('email');
+  if(!btn||!email) return;
+  btn.addEventListener('click',function(){
+    function selectIt(){
+      try{var r=document.createRange();r.selectNodeContents(email);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}
+      btn.textContent='Selected';
+    }
+    try{navigator.clipboard.writeText(email.textContent.trim()).then(function(){btn.textContent='Copied';},selectIt);}catch(e){selectIt();}
+    setTimeout(function(){btn.textContent='Copy';},2200);
+  });
+})();
+(function(){
+  var car=document.getElementById('car');
+  var shots=[].slice.call(document.querySelectorAll('.shot'));
+  var lb=document.getElementById('lb'), img=document.getElementById('lb-img'), cap=document.getElementById('lb-cap');
+  var cur=0, last=null;
+  function step(d){car.scrollBy({left:d*Math.max(200,car.clientWidth*0.8),behavior:'smooth'});}
+  document.getElementById('car-prev').addEventListener('click',function(){step(-1);});
+  document.getElementById('car-next').addEventListener('click',function(){step(1);});
+  function show(i){
+    cur=(i+shots.length)%shots.length;
+    var s=shots[cur], t=s.querySelector('img'), c=s.querySelector('.cap');
+    img.src=t.getAttribute('src'); img.alt=t.alt; cap.innerHTML=c.innerHTML.replace('</b>','</b> · ');
+  }
+  function open(i){last=document.activeElement; show(i); lb.hidden=false; document.documentElement.style.overflow='hidden'; document.getElementById('lb-close').focus();}
+  function close(){lb.hidden=true; document.documentElement.style.overflow=''; if(last&&last.focus) last.focus();}
+  shots.forEach(function(s,i){s.addEventListener('click',function(){open(i);});});
+  document.getElementById('lb-close').addEventListener('click',close);
+  document.getElementById('lb-prev').addEventListener('click',function(e){e.stopPropagation();show(cur-1);});
+  document.getElementById('lb-next').addEventListener('click',function(e){e.stopPropagation();show(cur+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target.tagName==='FIGURE') close();});
+  document.addEventListener('keydown',function(e){
+    if(lb.hidden) return;
+    if(e.key==='Escape') close();
+    else if(e.key==='ArrowRight') show(cur+1);
+    else if(e.key==='ArrowLeft') show(cur-1);
+  });
+})();
+</script>
+
+</body>
+</html>
